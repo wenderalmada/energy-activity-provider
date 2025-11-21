@@ -1,0 +1,1 @@
+# energy-activity-provider
