@@ -1,0 +1,9 @@
+{
+    "name": "EnergyConsumptionManager",
+    "config_url": "https://energy-activity-provider-96zq.onrender.com/config",
+    "json_params_url": "https://energy-activity-provider-96zq.onrender.com/params",
+    "user_url": "https://energy-activity-provider-96zq.onrender.com/deploy",
+    "analytics_url": "https://energy-activity-provider-96zq.onrender.com/analytics",
+    "analytics_list_url": "https://energy-activity-provider-96zq.onrender.com/analytics-list"
+  }
+  
