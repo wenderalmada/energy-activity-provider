@@ -10,8 +10,8 @@ public class ConfigController {
 
     @GetMapping("/config")
     public Map<String, Object> getConfig() {
-        //https://energy-provider.com
-        String baseUrl = "https://energy-activity-provider-96zq.onrender.com";
+        // https://energy-provider.onrender.com
+        String baseUrl = "https://energy-provider.com";
 
         return Map.of(
             "name", "EnergyConsumptionManager",
