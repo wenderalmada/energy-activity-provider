@@ -1,6 +1,8 @@
 C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\EnergyActivityProviderApplication.java
 C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\controller\ConfigController.java
 C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\controller\ParamsController.java
+C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\model\AnalyticsReport.java
+C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\service\AnalyticsEngine.java
 C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\controller\DeployController.java
 C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\controller\AnalyticsController.java
 C:\Users\Administrator\Desktop\Wender Almada\energy-activity-provider\src\main\java\com\provider\controller\AnalyticsListController.java

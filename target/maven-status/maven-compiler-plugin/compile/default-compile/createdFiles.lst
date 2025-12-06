@@ -1,6 +1,9 @@
 com\provider\controller\ConfigController.class
 com\provider\controller\AnalyticsListController.class
 com\provider\controller\DeployController.class
+com\provider\model\AnalyticsReport.class
 com\provider\controller\ParamsController.class
+com\provider\model\AnalyticsReport$Builder.class
+com\provider\service\AnalyticsEngine.class
 com\provider\controller\AnalyticsController.class
 com\provider\EnergyActivityProviderApplication.class
