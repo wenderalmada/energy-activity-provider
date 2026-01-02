@@ -19,13 +19,14 @@ public class AnalyticsController {
         this.adapter = adapter;
     }
 
-    @SuppressWarnings("unchecked")
     @PostMapping("/analytics")
     public Map<String, Object> getAnalytics(@RequestBody Map<String, Object> body) {
-        String instanceId = body.getOrDefault("instanceId","unknown").toString();
-        List<String> requested = (List<String>) body.get("analytics");
+        String instanceId = body.get("instanceId").toString();
 
-        AnalyticsReport report = engine.generateReport(instanceId, requested);
+        @SuppressWarnings("unchecked")
+        List<String> analyticsRequested = (List<String>) body.get("analytics");
+
+        AnalyticsReport report = engine.generateReport(instanceId, analyticsRequested);
 
         return adapter.adapt(report);
     }

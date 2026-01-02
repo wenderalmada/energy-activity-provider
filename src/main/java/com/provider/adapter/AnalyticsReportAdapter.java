@@ -18,8 +18,10 @@ public class AnalyticsReportAdapter implements ReportAdapter {
         m.put("generatedAt", report.getGeneratedAt().toString());
         m.put("metrics", report.getMetrics());
         m.put("alerts", report.getAlerts());
-        m.put("period", report.getPeriod());
+        m.put("period", report.getPeriod());       
 
+        System.out.println(">>> teste adapter");
+        
         return m;
     }
 }

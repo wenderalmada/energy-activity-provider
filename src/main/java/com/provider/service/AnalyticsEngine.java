@@ -22,8 +22,7 @@ public class AnalyticsEngine {
                 .generatedAt(Instant.now());
 
         // *** MOCK DOS VALORES ***
-        // Aqui no futuro você vai integrar com Monitorizacao e HistóricoBD
-
+        
         for (String analytic : analyticsRequested) {
             switch (analytic) {
                 case "Consumo Mensal (kWh)":
