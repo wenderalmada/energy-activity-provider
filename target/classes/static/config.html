@@ -6,26 +6,35 @@
 </head>
 <body>
     <h1>Configuração da Atividade</h1>
-
-    <form>
+    <form onsubmit="guardarConfiguracao(event)">
+  
         <label>Período de análise:</label>
-        <select>
-            <option>mensal</option>
-            <option>anual</option>
+        <select name="periodo">
+            <option value="mensal">Mensal</option>
+            <option value="anual">Anual</option>
         </select>
         <br><br>
 
         <label>
-            <input type="checkbox"> Integração com painéis solares
+            <input type="checkbox" name="solar">
+            Integração com painéis solares
         </label>
         <br><br>
 
         <label>
-            <input type="checkbox"> Gerar relatório
+            <input type="checkbox" name="relatorio">
+            Gerar relatório
         </label>
         <br><br>
 
-        <button type="submit">Guardar</button>
+        <button type="submit">Guardar configuração</button>
     </form>
+    
+    <script>
+        function guardarConfiguracao(event) {
+            event.preventDefault();
+            alert("Configuração guardada (simulação).");
+        }
+    </script>
 </body>
 </html>
