@@ -1,16 +1,16 @@
 package com.provider.controller;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
 
 import java.util.Map;
 
-@RestController
+@Controller
 public class ConfigController {
 
-    @GetMapping("/config")
-    public Map<String, Object> getConfig() {
-        //https://energy-provider.com
+    @GetMapping("/activity-info")
+    public Map<String, Object> getActivityInfo() {
         String baseUrl = "https://energy-activity-provider-96zq.onrender.com";
 
         return Map.of(
@@ -22,4 +22,10 @@ public class ConfigController {
             "analytics_list_url", baseUrl + "/analytics-list"
         );
     }
+
+    @GetMapping(value = "/config", produces = MediaType.TEXT_HTML_VALUE)
+    public String getConfigPage() {
+        return "config.html";
+    }
+
 }
